@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace GymApp.Data
+namespace GymApp.DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext
     {
