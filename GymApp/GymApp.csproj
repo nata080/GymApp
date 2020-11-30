@@ -20,4 +20,9 @@
     <ProjectReference Include="..\GymApp.Utility\GymApp.Utility.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Admin\" />
+    <Folder Include="Pages\User\Home\" />
+  </ItemGroup>
+
 </Project>
