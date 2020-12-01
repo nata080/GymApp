@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymApp", "GymApp\GymApp.csproj", "{DAAACB6A-D9D9-4FB4-8D34-5F48F98D8E73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymApp", "GymApp\GymApp.csproj", "{DAAACB6A-D9D9-4FB4-8D34-5F48F98D8E73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymApp.DataAccess", "GymApp.DataAccess\GymApp.DataAccess.csproj", "{0DDA3375-A7B8-4C53-A700-F0C291DC2CB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymApp.DataAccess", "GymApp.DataAccess\GymApp.DataAccess.csproj", "{0DDA3375-A7B8-4C53-A700-F0C291DC2CB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymApp.Models", "GymApp.Models\GymApp.Models.csproj", "{A0166307-7BCF-4247-BB18-0485A986B91B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymApp.Models", "GymApp.Models\GymApp.Models.csproj", "{A0166307-7BCF-4247-BB18-0485A986B91B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymApp.Utility", "GymApp.Utility\GymApp.Utility.csproj", "{805520B6-6F63-4F42-8278-C82A2F883B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymApp.Utility", "GymApp.Utility\GymApp.Utility.csproj", "{805520B6-6F63-4F42-8278-C82A2F883B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

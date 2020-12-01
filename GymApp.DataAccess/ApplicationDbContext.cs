@@ -15,5 +15,6 @@ namespace GymApp.DataAccess
         }
 
         public DbSet<Category> Category { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
     }
 }
