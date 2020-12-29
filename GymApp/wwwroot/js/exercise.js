@@ -7,21 +7,21 @@ $(document).ready(function () {
 function loadList() {
     dataTable = $('#DT_load').DataTable({
         "ajax": {
-            "url": "/api/category",
+            "url": "/api/Exercise",
             "type": "GET",
             "datatype": "json"
         },
         "columns": [
-            { "data": "displayOrder", "width": "5%" },
             { "data": "name", "width": "40%" },
+            { "data": "category.name", "width": "30%" },
             {
                 "data": "id",
                 "render": function (data) {
                     return ` <div class="text-center">
-                                <a href="/Admin/category/upsert?id=${data}" class="btn btn-success text-white" style="cursor:pointer; width:100px;">
+                                <a href="/Admin/Exercise/upsert?id=${data}" class="btn btn-success text-white" style="cursor:pointer; width:100px;">
                                  Edytuj
                                 </a>
-                                <a class="btn btn-danger text-white" style="cursor:pointer; width:100px;" onclick=Delete('/api/category/'+${data})>
+                                <a class="btn btn-danger text-white" style="cursor:pointer; width:100px;" onclick=Delete('/api/Exercise/'+${data})>
                                  Usuń
                                 </a>
                     </div>`;
@@ -56,7 +56,7 @@ function loadList() {
 
 function Delete(url) {
     swal({
-        title: "Czy na pewno chcesz usunąć Kategorię?",
+        title: "Czy na pewno chcesz usunąć Ćwiczenie?",
         icon: "warning",
         buttons: true,
         dangerMode: true

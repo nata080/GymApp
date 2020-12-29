@@ -7,6 +7,7 @@ namespace GymApp.DataAccess.Data.Repository.IRepository
     public interface IUnitOfWork : IDisposable
     {
         ICategoryRepository Category { get; }
+        IExerciseRepository Exercise { get; }
 
         void Save();
     }

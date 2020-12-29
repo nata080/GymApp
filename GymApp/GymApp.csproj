@@ -26,9 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Admin\Exercise\" />
     <Folder Include="Pages\Admin\User\" />
     <Folder Include="Pages\User\Home\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

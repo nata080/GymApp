@@ -1,0 +1,57 @@
+﻿@page
+@model GymApp.Pages.Admin.Exercise.UpsertModel
+
+<form method="post" asp-action="Upsert">
+    <div class="container">
+        <div class="row px-2 mx-2 backgroundWhite border">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (Model.ExerciseObj.Exercise.Id != 0)
+            {
+                <input type="hidden" asp-for="ExerciseObj.Exercise.Id" />
+            }
+            ExerciseObj.Exercise.CategoryId
+            <div class="col-12 px-3" style="border-bottom:1px solid">
+                <h2 class="text-primary">@(Model.ExerciseObj.Exercise.Id!=0 ? "Update" : "Stwórz") Ćwiczenie</h2>
+            </div>
+
+            <div class="col-8 pt-3">
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label asp-for="ExerciseObj.Exercise.Name"></label>
+                    </div>
+                    <div class="col-9">
+                        <input class="form-control" asp-for="ExerciseObj.Exercise.Name" />
+                        <span class="text-danger" asp-validation-for="ExerciseObj.Exercise.Name"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label asp-for="ExerciseObj.Exercise.CategoryId"></label>
+                    </div>
+                    <div class="col-9">
+                        @Html.DropDownListFor(m => m.ExerciseObj.Exercise.CategoryId,
+                       Model.ExerciseObj.CategoryList,
+                       "- Wybierz Kategorię -",
+                       new { @class = "form-control" })
+                        <span class="text-danger" asp-validation-for="ExerciseObj.Exercise.CategoryId"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-9 offset-3">
+                        <div class="row">
+                            <div class="col-6">
+
+                                <button type="submit" class="btn btn-primary form-control">@(Model.ExerciseObj.Exercise.Id != 0 ? "Update" : "Stwórz")</button>
+
+                            </div>
+                            <div class="col-6">
+                                <a asp-page="./Index" class="btn btn-success form-control">Powróć do Listy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
